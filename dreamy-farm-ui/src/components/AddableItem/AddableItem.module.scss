@@ -1,0 +1,120 @@
+.wrapper {
+  position: relative;
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+
+  transition: transform 0.1s ease-in-out;
+  will-change: transform;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+  }
+}
+
+.image {
+  width: 80%;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  object-position: center;
+  object-fit: contain;
+}
+
+.content {
+  width: 100%;
+  padding: 15px;
+
+  border-radius: 10px;
+  background-color: var(--white-color);
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name {
+    font-size: 2.3rem;
+    color: var(--text-color);
+    flex: 5;
+  }
+
+  .price {
+    margin-top: 10px;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+  }
+
+  .quantity {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+
+  .favorite {
+    display: block;
+    text-align: right;
+    flex: 2;
+  }
+}
+
+.addBtn {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+
+  font-size: 2.4rem;
+  border-radius: 10px;
+}
+
+//mobile
+.innerModal {
+  max-width: 85vw;
+  max-height: 95vh;
+  padding: 20px;
+
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+
+@media (min-width: 740px) {
+  .innerModal {
+    width: 70vw;
+    padding: 40px;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .innerModal {
+    width: 80vw;
+  }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .innerModal {
+    width: 73vw;
+  }
+}
+
+@media (min-width: 1240px) and (max-width: 1549px) {
+  .innerModal {
+    width: 65vw;
+  }
+}
+
+@media (min-width: 1550px) {
+  .innerModal {
+    width: 55vw;
+  }
+}

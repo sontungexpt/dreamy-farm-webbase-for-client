@@ -1,0 +1,122 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--footer-color);
+
+  .inner {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .logo {
+    margin: 20px 0 40px 38px;
+  }
+
+  .socialList {
+    list-style: none;
+
+    .socialLink {
+      display: flex;
+      align-items: center;
+
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: var(--white-color);
+
+      margin: 8px 0;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+
+      .socialIcons {
+        min-width: 40px;
+      }
+    }
+  }
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+  .feedbackTitle {
+    font-size: 3rem;
+    color: var(--white-color);
+  }
+
+  .feedbackInput {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    margin: 10px 0;
+    resize: none;
+    overflow: auto;
+
+    font-size: 1.8rem;
+
+    border-radius: 5px;
+    border: 1px solid var(--gray-color);
+
+    transition: all 0.2s ease-in-out;
+    will-change: height border;
+    &:focus {
+      border: 1px solid var(--primary-color);
+      height: 130px;
+    }
+    &:hover {
+      border: 1px solid var(--primary-color);
+      height: 130px;
+    }
+  }
+
+  .submitBtn {
+    width: 100%;
+    height: 50px;
+
+    font-size: 2.4rem;
+
+    border-radius: 5px;
+  }
+}
+
+.language {
+  width: 170px;
+  height: 48px;
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--white-color);
+
+  cursor: pointer;
+}
+
+.copyRight {
+  width: 100%;
+  height: 56px;
+
+  text-align: right;
+  line-height: 56px;
+  color: var(--white-color);
+
+  border-top: 1px solid var(--separator-color);
+  padding-right: 20px;
+}

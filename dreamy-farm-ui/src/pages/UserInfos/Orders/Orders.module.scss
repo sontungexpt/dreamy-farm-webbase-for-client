@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: var(--white-color);
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
+
+  h2 {
+    font-size: 3rem;
+    color: var(--darker-gray-color);
+
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--gray-color);
+  }
+
+  .orderItem {
+    margin-bottom: 20px;
+  }
+}

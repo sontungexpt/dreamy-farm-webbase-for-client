@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+}
+
+.label {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+.input {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid var(--gray-color);
+  border-radius: 4px;
+  font-size: 2rem;
+  padding: 10px;
+
+  &:focus + .error {
+    display: none;
+  }
+}
+
+.error {
+  color: var(--red-color);
+  font-size: 1.6rem;
+}

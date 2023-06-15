@@ -1,0 +1,29 @@
+.innerModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.control {
+  width: 100px;
+  height: 40px;
+  font-size: 2rem;
+  margin-left: 14px;
+
+  &:hover {
+    background-color: var(--button-hover-color1);
+  }
+}

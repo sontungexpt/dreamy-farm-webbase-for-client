@@ -1,0 +1,120 @@
+.wrapper {
+  padding: 60px 10px;
+}
+
+.col1 {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.imageFixed {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 60%;
+  }
+
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      margin: 10px 0;
+
+      font-size: 3rem;
+      color: var(--text-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .price {
+    font-size: 2.4rem;
+    color: var(--text-color2);
+  }
+
+  // type of products
+  .type {
+    .typeButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      height: 55px;
+
+      border: 1px solid var(--gray-color);
+      border-radius: 5px;
+
+      font-size: 2.2rem;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--button-hover-color1);
+      }
+    }
+
+    .active {
+      .typeButton {
+        background-color: var(--primary-color);
+        border: none;
+
+        color: var(--white-color);
+      }
+    }
+  }
+
+  .quantity {
+    margin-top: 20px;
+    width: 160px;
+  }
+
+  .addBtn {
+    width: 100%;
+    height: 65px;
+    margin-top: 40px;
+    border: 1px solid var(--gray-color);
+
+    font-size: 2.4rem;
+  }
+}
+
+.description {
+  margin-top: 20px;
+
+  h3 {
+    margin-bottom: 18px;
+    font-size: 2.4rem;
+    color: var(--black-color);
+  }
+
+  p {
+    font-size: 2rem;
+    color: var(--black-color);
+    text-align: justify;
+  }
+}

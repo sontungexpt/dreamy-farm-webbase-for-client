@@ -1,0 +1,42 @@
+{
+  "name": "dreamy-farm-server",
+  "version": "1.0.0",
+  "description": "The api server for dreamy  farm website",
+  "main": "index.js",
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,css,scss,md,json}": "prettier --write --ignore-unknown"
+  },
+  "scripts": {
+    "beautiful": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json}\"",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "babel src -d build",
+    "start": "npm run build && nodemon build/index.js",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.1.1",
+    "mongoose-slug-updater": "^3.3.0",
+    "nodemailer": "^6.9.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.5",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "prettier": "2.8.8"
+  }
+}

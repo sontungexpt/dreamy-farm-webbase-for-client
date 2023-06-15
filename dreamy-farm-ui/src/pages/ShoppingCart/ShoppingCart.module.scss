@@ -1,0 +1,73 @@
+.wrapper {
+  min-height: 600px;
+  padding: 20px 0;
+  .title {
+    margin-bottom: 13px;
+    font-size: 3.4rem;
+  }
+
+  .subTitle {
+    font-size: 2rem;
+    color: var(--darker-gray-color);
+  }
+}
+.main {
+  padding: 50px 0;
+}
+
+.control {
+  font-size: 2.1rem;
+  padding: 10px;
+  color: var(--primary-color);
+
+  &:hover {
+    cursor: pointer;
+    color: var(--gray-color);
+  }
+}
+
+.noData {
+  color: var(--disabled-color);
+  margin-top: 60px;
+  &:hover {
+    cursor: default;
+    color: var(--disabled-color);
+  }
+}
+
+.checkoutBtn {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.totalWrapper {
+  width: 230px;
+}
+
+.total {
+  font-size: 3.2rem;
+  color: var(--red-color);
+  margin-bottom: 20px;
+}
+
+.totalPrice {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+  .totalWrapper {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+}

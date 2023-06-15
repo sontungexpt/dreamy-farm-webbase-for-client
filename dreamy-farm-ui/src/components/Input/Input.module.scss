@@ -1,0 +1,88 @@
+.wrapper {
+  width: 100%;
+
+  &:hover {
+    label {
+      color: var(--primary-color);
+    }
+    .inputWrapper {
+      border-bottom: 1px solid var(--primary-color);
+    }
+  }
+}
+
+.wrapper.box {
+  .inputWrapper {
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
+
+    input {
+      padding: 10.5px;
+    }
+  }
+
+  &:hover {
+    label {
+      color: var(--primary-color);
+    }
+
+    .inputWrapper {
+      border: 1px solid var(--primary-color);
+    }
+  }
+}
+
+label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  margin-bottom: 4px;
+
+  font-size: 2.2rem;
+
+  color: var(--darker-gray-color);
+
+  span {
+    font-size: 2rem;
+    line-height: 100%;
+    margin-right: 14px;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid var(--gray-color);
+
+  span {
+    line-height: 2.2rem;
+    margin-right: 20px;
+  }
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  outline: none;
+  border: none;
+  border-radius: inherit;
+}
+
+.error {
+  display: block;
+  margin-top: 10px;
+  color: var(--red-color);
+  font-size: 1.6rem;
+}

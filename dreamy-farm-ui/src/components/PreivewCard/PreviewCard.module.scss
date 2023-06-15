@@ -1,0 +1,44 @@
+.wrapper {
+  display: block;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 240px;
+  }
+
+  .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: 1px solid var(--separator-color);
+    border-radius: 10px;
+  }
+}
+
+.footer {
+  margin-left: 10px;
+}
+
+.title {
+  margin: 10px 0;
+  font-size: 2.6rem;
+  color: var(--primary-color);
+}
+
+.subTitle {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: var(--blue-color);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
