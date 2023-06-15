@@ -3,7 +3,6 @@
 # dependencies
 dreamy-farm-server/.git
 dreamy-farm-ui/.git
-
 /node_modules
 /.pnp
 .pnp.js
